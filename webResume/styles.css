@@ -1,74 +1,74 @@
 body {
-    /*background-image: url(woodbackground.jpg);*/
     background-image: url(floralweb.jpg);
-    /*background-repeat: no-repeat;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*min-height: 100%;*/
     background-color: #0ABAB5;
-    color: whitesmoke;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: #f5f5f5;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
     font-size: 15px;
 }
+
 .header {
     text-align: center;
-    border-bottom: thin solid black;
+    border-bottom: thin solid #000;
 }
+
 h1 {
     font-size: 400%;
 }
-/*.skills h2 {*/
-    /*font-weight: 700;*/
-/*}*/
 
 a {
-  color: white;
+    color: #fff;
 }
+
 .skills {
-    padding-top: 0px;
+    padding-top: 0;
     font-weight: 500;
     text-align: center;
     line-height: 2;
 }
-/*.interests h2 {*/
-    /*font-weight: 700;*/
-/*}*/
+
 .interests {
-    border-bottom: thin solid black;
+    border-bottom: thin solid #000;
     padding-bottom: 20px;
     font-weight: 500;
     text-align: center;
     line-height: 2;
 }
+
 table {
     background-color: #204d74;
     text-align: center;
-    color: white;
+    color: #fff;
 }
+
 ul li {
     display: inline;
 }
+
 .title {
-    border-bottom: thin solid black;
+    border-bottom: thin solid #000;
     font-weight: 700;
 }
+
 .date {
     float: right;
 }
+
 .subtitle {
-    /*padding-top: 0;*/
-    /*margin-top: 0;*/
     float: left;
     font-weight: 500;
 }
+
 .well {
-    padding: 0 10px 0 10px;
-    margin: 0 10px 0 10px;
-    background-color: rgba(245, 245, 245, 0.2);
+    padding: 0 10px;
+    margin: 0 10px;
+    background-color: rgba(245,245,245,0.2);
     border: none;
 }
+
 .inner {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
 }
