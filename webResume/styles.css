@@ -10,6 +10,30 @@ body {
     font-size: 15px;
 }
 
+#proficientSkills {
+    display: none;
+    width: 245px;
+}
+
+#experiencedSkills {
+    display: none;
+    width: 245px;
+}
+
+#learningSkills {
+    display: none;
+    width: 245px;
+}
+
+button {
+    background-color: #8E0228;
+    margin: 3px;
+}
+
+small {
+    font-size: 9px;
+}
+
 .header {
     text-align: center;
     border-bottom: thin solid #000;
@@ -21,6 +45,10 @@ h1 {
 
 a {
     color: #fff;
+}
+
+p > a {
+    text-decoration: underline;
 }
 
 .skills {
