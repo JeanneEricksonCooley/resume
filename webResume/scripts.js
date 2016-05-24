@@ -30,7 +30,6 @@ console.log("proficient");
                 document.getElementById("learningSkills").className = "col-md-offset-2 col-md-2 text-center";
                 console.log('LP');
            }
-         
          // yes E   
         } else {
             document.getElementById("proficientSkills").className = "col-md-offset-3 col-md-2 text-center";
@@ -38,30 +37,21 @@ console.log("proficient");
             document.getElementById("learningSkills").className = "col-md-2 text-center";
             console.log('EP & LEP & ELP');
         }
-        
-
 	} else {
 		showProfSkills.style.display = 'none';
         console.log('no P');
 
-       
-    //     if (showExpSkills.style.display != 'block') {
-
-    //         if (showLearnSkills.style.display != 'block') {
-    //             console.log('hi');
-
-    //         } else {
-    //             document.getElementById("learningSkills").className = "col-md-offset-7 text-center";
-    //         }
-    //     } else {
-    //         document.getElementById("experiencedSkills").className = "col-md-offset-5 text-center";
-    //         document.getElementById("learningSkills").className = "col-md-2 text-center";
-    //     }
+        if (showExpSkills.style.display != 'block') {
+            if (showLearnSkills.style.display != 'block') {
+            console.log('hi');
+            } else {
+                document.getElementById('learningSkills').className = "col-md-offset-7 col-md-2 text-center";
+            }
+        } else {
+        document.getElementById("experiencedSkills").className = "col-md-offset-5 col-md-2 text-center";
+        document.getElementById("learningSkills").className = "col-md-2 text-center";
+        }
     }        
-            
-              
-       
-	
 });
 
 
@@ -102,9 +92,17 @@ console.log("experienced");
 		showExpSkills.style.display = 'none';
         console.log('no E');
 
-        // check if P
-        // check if L
-        // *** onliy need to check for L. P styling will not change on E unclick
+        
+        if (showProfSkills.style.display != 'block') {
+            if (showLearnSkills.style.display != 'block') {
+            console.log('all hidden');
+            } else {
+                document.getElementById('learningSkills').className = "col-md-offset-7 col-md-2 text-center";
+            }
+        } else {
+            document.getElementById('proficientSkills').className = "col-md-offset-3 col-md-2 text-center";
+            document.getElementById('learningSkills').className = "col-md-offset-2 col-md-2 text-center";
+        }
 	}
 });
 
@@ -147,9 +145,7 @@ console.log("learning");
             document.getElementById("experiencedSkills").className = "col-md-offset-5 col-md-2 text-center";
             document.getElementById("learningSkills").className = "col-md-2 text-center";
             console.log('EL');
-            // if proficient is unclicked, this still showing   
     
-
             } else {
                 document.getElementById("proficientSkills").className = "col-md-offset-3 col-md-2 text-center";
                 document.getElementById("experiencedSkills").className = "col-md-2 text-center";
@@ -157,17 +153,22 @@ console.log("learning");
                 console.log('PEL & EPL');
             }   
         }
-    
 
     } else {
         showLearnSkills.style.display = 'none';
         console.log('no L');
 
-        // check if P
-        // check if E
-        // *** don't need to do either, styling doesn't change for either when L is unclicked
+        if (showProfSkills.style.display != 'block') {
+            if (showExpSkills.style.display != 'block') {
+            console.log('hi');
+            } else {
+                document.getElementById('experiencedSkills').className = "col-md-offset-5 col-md-2 text-center";
+            }
+        } else {
+        document.getElementById("proficientSkills").className = "col-md-offset-3 col-md-2 text-center";
+        document.getElementById("learningSkills").className = "col-md-2 text-center";
+        }
     }
-
 });
 
 
